@@ -11,12 +11,13 @@ func main() { // main function. The entry point of our Go application
 	fmt.Println("Get your tickets now to attend")
 
 	var userName string
-	var userAge int
+	var userTickets int
 
-	userName = "Tom"
-	userAge = 25
+	fmt.Println("Enter your first name: ")
+	fmt.Scan(&userName)
 
-	fmt.Println("User Name: ", userName)
-	fmt.Println("User Age: ", userAge)
+	userTickets = 25
+
+	fmt.Printf("User %v booked %v tickets\n", userName, userTickets)
 
 }
